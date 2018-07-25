@@ -6,6 +6,7 @@ def key_for_min_value(name_hash)
     return nil
   else
     min = 2 * (10 ** 32)
+    minKey = nil
     name_hash.collect do |item, val|
       if val < min
         minKey = item
