@@ -5,7 +5,7 @@ def key_for_min_value(name_hash)
   if name_hash.length == 0
     return nil
   else
-    name_hash.each do |item, val|
+    name_hash.collect do |item, val|
       if val < min
         minKey = item
       end
